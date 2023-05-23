@@ -3,6 +3,7 @@ const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const app = express();
 var cors = require('cors')
+require('dotenv').config()
 
 const connect = mysql.createConnection(process.env.DATABASE_URL)
 
